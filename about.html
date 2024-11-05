@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css"> <!-- Use relative path -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Travelland</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li> <!-- Use relative path -->
+                <li><a href="gallery.html">Gallery</a></li> <!-- Use relative path -->
+                <li><a href="about.html" class="active">About Us</a></li> <!-- Use relative path -->
+                <li><a href="contact.html">Contact</a></li> <!-- Use relative path -->
+            </ul>
+        </nav>
+        <a href="#" class="cta" id="bookTicketBtn" onclick="return false;">Book a Ticket</a> <!-- Added onclick to prevent navigation -->
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="hero-image">
+            <img src="header-image.jpg" alt="Hot air balloons at sunset">
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>Our company was founded with a passion for innovation and excellence. Over the years, we've dedicated ourselves to providing top-notch solutions to meet our clients' needs.</p>
+            <p>We believe in the power of collaboration, continuous learning, and a commitment to quality. Our team of experts is here to bring your ideas to life, and we strive to make a positive impact in everything we do.</p>
+        </div>
+    </section>
+
+    <!-- Book Ticket Modal -->
+    <div id="bookTicketModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Explore the World</h3>
+            <h1>Book a Ticket</h1>
+            <form id="bookTicketForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                
+                <button type="submit" class="send-button">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Travelland</h2>
+                <p>Breakfast procuring nay end happiness allowance assurance frankness. Met simplicity nor difficulty unreserved who.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="fb.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="twitter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="yt.jpg" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="careers.html">Careers</a></li> <!-- Use relative path -->
+                    <li><a href="about.html">About Us</a></li> <!-- Use relative path -->
+                    <li><a href="blog.html">Blog</a></li> <!-- Use relative path -->
+                    <li><a href="press-info.html">Press Info</a></li> <!-- Use relative path -->
+                    <li><a href="features.html">Features</a></li> <!-- Use relative path -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Travelers</h3>
+                <ul>
+                    <li><a href="why-travelers.html">Why Travelers</a></li> <!-- Use relative path -->
+                    <li><a href="enterprise.html">Enterprise</a></li> <!-- Use relative path -->
+                    <li><a href="our-story.html">Our Story</a></li> <!-- Use relative path -->
+                    <li><a href="pricing.html">Pricing</a></li> <!-- Use relative path -->
+                    <li><a href="security.html">Security</a></li> <!-- Use relative path -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="download.html">Download</a></li> <!-- Use relative path -->
+                    <li><a href="help-center.html">Help Center</a></li> <!-- Use relative path -->
+                    <li><a href="guides.html">Guides</a></li> <!-- Use relative path -->
+                    <li><a href="events.html">Events</a></li> <!-- Use relative path -->
+                </ul>
+            </div>
+            <div class="footer-section address">
+                <h3>Address</h3>
+                <p><i class="fas fa-phone"></i> +1 (314) 892-2600</p>
+                <p><i class="fas fa-envelope"></i> travelland@mail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 969 Pine Street Grand Rapids</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

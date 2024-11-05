@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css"> <!-- Use relative path -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Travelland</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li> <!-- Use relative path -->
+                <li><a href="gallery.html">Gallery</a></li> <!-- Use relative path -->
+                <li><a href="about.html">About Us</a></li> <!-- Use relative path -->
+                <li><a href="contact.html" class="active">Contact</a></li> <!-- Use relative path -->
+            </ul>
+        </nav>
+        <a href="#" class="cta" id="bookTicketBtn">Book a Ticket</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-image">
+            <img src="header-image2.jpg" alt="Contact Page Hero Image">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-info">
+            <h1>Start Your Journey</h1>
+            <h3>Contact or Visit Us</h3>
+            <p>Entreaties mr conviction dissimilar me astonished estimating cultivated. On no applauded exquisite my additions. Pronounce add boy.</p>
+
+            <div class="contact-details">
+                <div class="contact-item">
+                    <img src="phone-icon.png" alt="Phone Icon">
+                    <div>
+                        <p class="contact-title">+1-(314) 892-2600</p>
+                        <p class="contact-subtitle">Office Phone Number</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <img src="email-icon.png" alt="Email Icon">
+                    <div>
+                        <p class="contact-title">travelland@mail.com</p> <!-- Corrected email address -->
+                        <p class="contact-subtitle">Office Email Address</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <img src="location-icon.png" alt="Location Icon">
+                    <div>
+                        <p class="contact-title">969 Pine Street Grand Rapids</p>
+                        <p class="contact-subtitle">Company Office Address</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="/submit-contact" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="send-btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Success Message Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <p>Successfully sent!</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Travelland</h2>
+                <p>Breakfast procuring nay end happiness allowance assurance frankness. Met simplicity nor difficulty unreserved who.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="fb.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="twitter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="yt.jpg" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="careers.html">Careers</a></li> <!-- Use relative path -->
+                    <li><a href="about.html">About Us</a></li> <!-- Use relative path -->
+                    <li><a href="blog.html">Blog</a></li> <!-- Use relative path -->
+                    <li><a href="press-info.html">Press Info</a></li> <!-- Use relative path -->
+                    <li><a href="features.html">Features</a></li> <!-- Use relative path -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Travelers</h3>
+                <ul>
+                    <li><a href="why-travelers.html">Why Travelers</a></li> <!-- Use relative path -->
+                    <li><a href="enterprise.html">Enterprise</a></li> <!-- Use relative path -->
+                    <li><a href="our-story.html">Our Story</a></li> <!-- Use relative path -->
+                    <li><a href="pricing.html">Pricing</a></li> <!-- Use relative path -->
+                    <li><a href="security.html">Security</a></li> <!-- Use relative path -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="download.html">Download</a></li> <!-- Use relative path -->
+                    <li><a href="help-center.html">Help Center</a></li> <!-- Use relative path -->
+                    <li><a href="guides.html">Guides</a></li> <!-- Use relative path -->
+                    <li><a href="events.html">Events</a></li> <!-- Use relative path -->
+                </ul>
+            </div>
+            <div class="footer-section address">
+                <h3>Address</h3>
+                <p><i class="fas fa-phone"></i> +1 (314) 892-2600</p>
+                <p><i class="fas fa-envelope"></i> travelland@mail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 969 Pine Street Grand Rapids</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
